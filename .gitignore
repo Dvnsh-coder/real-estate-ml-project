@@ -5,3 +5,5 @@ venv/
 *.pyc
 *.pkl
 *.joblib
+data/clients.csv
+data/properties.csv
