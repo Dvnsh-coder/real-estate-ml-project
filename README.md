@@ -1,5 +1,7 @@
 # Machine Learning Based Buyer Segmentation and Investment Profiling for Real Estate Market Intelligence
+## 🚀 Live Dashboard
 
+[**Open the Live Streamlit Dashboard**](https://dvnsh-coder-real-estate-ml-project-app-mzskib.streamlit.app/)
 ## 📌 Project Overview
 
 This project develops a machine learning-based buyer segmentation and investment profiling system for the real estate market.
