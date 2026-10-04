@@ -89,7 +89,7 @@ dashboard_df = load_data()
 if dashboard_df is None:
 
     st.error(
-        "⚠️ Dataset not found at "
+        "Dataset not found at "
         "`data/dashboard_data.csv`. "
         "Please ensure the file path is correct."
     )
@@ -343,7 +343,7 @@ st.markdown(
 # ============================================================
 
 st.title(
-    "🏠 Real Estate Buyer Intelligence"
+    "Real Estate Buyer Intelligence"
 )
 
 st.markdown(
@@ -361,7 +361,7 @@ st.markdown(
 # ============================================================
 
 st.sidebar.title(
-    "🔎 Dashboard Filters"
+    "Dashboard Filters"
 )
 
 st.sidebar.caption(
@@ -374,7 +374,7 @@ st.sidebar.caption(
 # ============================================================
 
 if st.sidebar.button(
-    "🔄 Reset All Filters",
+    "Reset All Filters",
     use_container_width=True,
 ):
 
@@ -406,7 +406,7 @@ country_options = sorted(
 
 country_filter = st.sidebar.multiselect(
 
-    "🌎 Country",
+    "Country",
 
     options=country_options,
 
@@ -471,7 +471,7 @@ st.session_state[
 
 region_filter = st.sidebar.multiselect(
 
-    "📍 Region",
+    "Region",
 
     options=region_options,
 
@@ -498,7 +498,7 @@ purpose_options = sorted(
 
 purpose_filter = st.sidebar.multiselect(
 
-    "🎯 Acquisition Purpose",
+    "Acquisition Purpose",
 
     options=purpose_options,
 
@@ -525,7 +525,7 @@ client_type_options = sorted(
 
 client_type_filter = st.sidebar.multiselect(
 
-    "👤 Client Type",
+    "Client Type",
 
     options=client_type_options,
 
@@ -613,7 +613,7 @@ csv_export = (
 
 st.sidebar.download_button(
 
-    label="📥 Download Filtered Data",
+    label="Download Filtered Data",
 
     data=csv_export,
 
@@ -706,7 +706,7 @@ with col1:
 
     st.metric(
 
-        "👥 Buyers Analyzed",
+        "Buyers Analyzed",
 
         f"{total_clients:,}",
 
@@ -721,7 +721,7 @@ with col2:
 
     st.metric(
 
-        "📈 Investment Buyers",
+        "Investment Buyers",
 
         format_percentage(
             investment_percentage
@@ -738,7 +738,7 @@ with col3:
 
     st.metric(
 
-        "💰 Avg Total Property Value",
+        "Avg Total Property Value",
 
         format_currency(
             average_total_value
@@ -755,7 +755,7 @@ with col4:
 
     st.metric(
 
-        "🏘️ Avg Properties / Client",
+        "Avg Properties / Client",
 
         f"{average_property_count:.2f}",
 
@@ -774,7 +774,7 @@ st.divider()
 # ============================================================
 
 st.subheader(
-    "🧠 Key Insights"
+    "Key Insights"
 )
 
 
@@ -935,11 +935,11 @@ st.divider()
 ) = st.tabs(
 
     [
-        "📊 Overview",
-        "💰 Buyer Behavior",
-        "🌎 Geography",
-        "👥 Segment Explorer",
-        "🧠 ML Methodology",
+        "Overview",
+        "Buyer Behavior",
+        "Geography",
+        "Segment Explorer",
+        "ML Methodology",
     ]
 )
 
@@ -1102,7 +1102,7 @@ with overview_tab:
 
 
     with st.expander(
-        "📄 View Filtered Raw Dataset Rows"
+        "View Filtered Raw Dataset Rows"
     ):
 
         st.dataframe(
@@ -1190,7 +1190,7 @@ with behavior_tab:
 
             y="Clients",
 
-            title="Financing Behavior(Loan Applied)",
+            title="Financing Behavior (Loan Applied)",
         )
 
 
@@ -1299,7 +1299,7 @@ with behavior_tab:
 with geography_tab:
 
     st.header(
-        "🌎 Geographic Buyer Analysis"
+        "Geographic Buyer Analysis"
     )
 
     st.caption(
@@ -1349,7 +1349,7 @@ with geography_tab:
     # ========================================================
 
     st.subheader(
-        "🗺️ Geographic Buyer Map"
+        "Geographic Buyer Map"
     )
 
     st.caption(
@@ -1654,7 +1654,7 @@ with geography_tab:
 with segments_tab:
 
     st.header(
-        "👥 Buyer Segment Explorer"
+        "Buyer Segment Explorer"
     )
 
     st.caption(
@@ -1742,7 +1742,7 @@ with segments_tab:
     with col1:
 
         st.metric(
-            "👥 Clients",
+            "Clients",
             f"{segment_clients:,}",
         )
 
@@ -1750,7 +1750,7 @@ with segments_tab:
     with col2:
 
         st.metric(
-            "🎂 Average Age",
+            "Average Age",
             f"{segment_avg_age:.1f}",
         )
 
@@ -1758,7 +1758,7 @@ with segments_tab:
     with col3:
 
         st.metric(
-            "🏘️ Avg Properties",
+            "Avg Properties",
             f"{segment_avg_property_count:.2f}",
         )
 
@@ -1766,7 +1766,7 @@ with segments_tab:
     with col4:
 
         st.metric(
-            "⭐ Satisfaction",
+            "Satisfaction",
             f"{segment_satisfaction:.2f}/5",
         )
 
@@ -1920,7 +1920,7 @@ with segments_tab:
     # ========================================================
 
     st.subheader(
-        "🧠 Segment Interpretation"
+        "Segment Interpretation"
     )
 
 
@@ -1999,7 +1999,7 @@ with segments_tab:
 with model_tab:
 
     st.header(
-        "🧠 Machine Learning Methodology"
+        "Machine Learning Methodology"
     )
 
     st.caption(
